@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Form</title>
+</head>
+<body>
+<form action="LCServlet" method="POST">
+    Line or path: <input name="lineORpath" />
+    <br><br>
+    Type of input: <input type="radio" name="typeOFinput" value="Keyboard" checked />From keyboard
+    				<input type="radio" name="typeOFinput" value="File" />From file
+    				<input type="radio" name="typeOFinput" value="DatabaseLine" />From MySQL database
+    				<input type="radio" name="typeOFinput" value="MongoDoc" />From MongoDB
+    <br><br>
+    Database input: <input type="radio" name="DBinput" value="Yes" checked />Yes
+    <input type="radio" name="DBinput" value="No" />No
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
